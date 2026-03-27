@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Tag</title>
+</head>
+<body>
+    <div>
+    <h2>Login.</h2>
+    <!-- user id -->
+  <label for="">User id</label>
+  <input type="text" id ="user_id"><br><br>
+  <!-- password -->
+    <label for="password">Password</label>
+  <input type="password" id ="password" placeholder="password"><br><br>
+   <!-- button -->
+    <button onclick="login()">Submit</button>
+     <!-- result -->
+      <p id ="result1"></p>
+      <p id ="result2"></p>
+    </div>
+    <script>
+      function login() {
+      let user = document.getElementById("user_id").value;
+      let pass = document.getElementById("password").value;
+
+        const correctUser = "khan";
+        const correctPass = "khan786";
+        if(user === correctUser && pass === correctPass){
+            
+            document.getElementById("result1").innerText = "you are successful login......";
+        }
+            else
+        {
+           document.getElementById("result2").innerText ="invalid user id or password or both......";  
+        }
+
+        }
+       
+
+
+
+
+
+    </script>
+</body>
+</html>

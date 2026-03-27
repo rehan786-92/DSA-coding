@@ -1,0 +1,65 @@
+body{
+    font-family: Arial,sans-serif;
+    text-align: center;
+    background-color: azure;
+}
+.image-container{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+}
+.image-container img{
+
+  width: 300px;
+  height: 200;
+  border: 5px;
+  margin: 5px;
+  box-shadow: o 4px 8px rgba(0,0,0,0.2);  
+}
+.product-card{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ text-align: center;
+ margin-top: 10px;
+}
+.price-info{
+ margin-top: 20px;
+ font-family: Arial,sans-serif;
+}
+.original-price{
+  color: aquamarine;
+  margin: 0 5px;
+}
+.discount-percentage{
+  color: brown;
+  font-weight: bold;
+}
+.discount-price {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.product-mobile{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ text-align: center;
+ margin-top: 10px;
+}
+.price-info{
+ margin-top: 20px;
+ font-family: Arial,sans-serif;
+}
+.original-price{
+  color: aquamarine;
+  margin: 0 5px;
+}
+.discount-percentage{
+  color: green;
+  font-weight: bold;
+}
+.discount-price {
+  font-weight: bold;
+  font-size: 1.1em;
+}

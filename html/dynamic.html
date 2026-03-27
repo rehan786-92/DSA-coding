@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+  <h2>Resistration Form :-</h2>
+  <form name ="myForm" onsubmit ="return validationForm()">
+      Nmae:<input type "text" name="name"><br><br>
+      Email:<input type "text" name="email"><br><br>
+      password:<input type "password" name="password"><br><br>
+
+        <button type "submit">Submit</button>
+    
+        </form>
+        </div>
+    <script>
+        function validationForm(){
+          let name = document.forms["myForm"]["name"].value;
+          let email = document.forms["myForm"]["email"].value;
+          let password = document.forms["myForm"]["password"].value;
+          
+                 if(name == " "){
+                    document.write("Name must be filled out:");
+                    return false;
+                 }
+           if(!email.icludes("@")){
+                    document.write("Enter a valid email:");
+                    return false;
+                 }
+                 if(name == " "){
+                  document.write("Name must be filled out:");
+                    return false;
+                 }
+           if(password.lenth<6){
+                    document.write("password must be atleast 6 character:");
+                    return false;
+           }
+
+           document.write("Form submitted succesfully");
+           return true;
+           
+           
+        }
+
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="num">Enter the number : </label>
+    <input type="number" id ="num" placeholder="Enter the number">
+    <button onclick="countTabel()">OK</button>
+    <!-- <h2 id="table"></h2> -->
+
+    <script>
+        function countTabel(){
+            let a=document.getElementById("num").value;
+            //let num2 = document.getElementById('num1');
+            // console.log(a);
+            // let n=Number(a);
+            for(let i=1;i<=10;i++){
+                let ans=a*i;
+                // console.log(ans);
+               // console.dir(num2)
+                // document.getElementById("table").textContent=ans;
+                // num2.innerText = ans;
+                document.write(ans+ "<br>");
+                console.log(ans+ "<br>");
+                alert(ans+ "<br>");
+                
+
+            }
+            // document.getElementById("table").innerHTML="ans";
+        };
+    </script>
+    
+</body>
+</html>
