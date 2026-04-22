@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .para {
+            height: 50%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div className="para">
+        <h1 id="a"><span>Rehan khan</span></h1>
+        <p id="b">I am Rehan khan. My graduation complete from UP college, varanasi.</p>
+        
+    </div>
+    <button onclick="changecolour()">OK</button>
+    <script>
+        function changecolour() {
+            let x = document.getElementsByClassName("para");
+            x[0].style.backgroundColor ="black";
+        }
+    </script>
+</body>
+
+</html>

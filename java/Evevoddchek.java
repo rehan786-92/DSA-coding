@@ -11,5 +11,5 @@ public class Evevoddchek {
         else{
             System.out.println("The given number is Odd:");
         }
- }  
-}
+    }  
+ }

@@ -3,7 +3,7 @@
 int main(){
     int i;
     int n = INT_MAX;
-    int a[n]={2,2,3,12,12,15};
+    int a[]={2,2,3,12,12,15};
     int freq[]={0,0,0,0,0,0};
     int t;
     for(i=0;i<6;i++){
